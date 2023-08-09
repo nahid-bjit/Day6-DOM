@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="ourHeader" style="color: skyblue;">Our first dom manipulation</h1>
+    <p id="ourParagraph">This is our paragraph, some description are here</p>
+
+    <script>
+        const ourHeaderDom = document.getElementById("ourHeader");
+        ourHeaderDom.style.color = "maroon";
+
+        const ourParagraphDom = document.getElementById("ourParagraph");
+        ourParagraphDom.style.color = "blue";
+        ourParagraphDom.style.padding = "100px";
+        ourParagraphDom.style.borderRadius = "10px"
+    </script>
+    
+</body>
+</html>

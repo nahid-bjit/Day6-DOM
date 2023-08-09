@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="ourDiv">
+            
+        <h1 id="ourHeader" style="color: skyblue;">Creating Elements</h1>
+        <p id="ourParagraph">We will create some p tag here</p>
+       
+    </div>
+
+    <button id="clickButton" onclick="creatingElement()">Click Me!</button>
+
+
+
+    <script>
+        const ourHeaderDom = document.getElementById("ourHeader");
+        const ourDivDom = document.getElementById("ourDiv");
+        // const ourSecondDivDom = document.getElementById("secondDiv");
+
+        function creatingElement() {
+            const para = document.createElement("p");
+            para.innerText = "This is newly added!!!";
+            para.style.color = "red";
+            ourDivDom.appendChild(para);
+
+            // const newHeaderElement = document.createElement("h1");
+            // para.innerText = "This is our New Header!!!";
+            // para.style.color = "purple";
+            // ourDivDom.appendChild(newHeaderElement);
+
+
+        }
+  
+    </script>
+    
+</body>
+</html>

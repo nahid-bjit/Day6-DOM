@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="ourHeader" style="color: skyblue;" onclick="onClickHandler()" onmouseover="onMouseOVerHandler()">Our first dom manipulation</h1>
+    <p id="ourParagraph">This is our paragraph, some description are here</p>
+
+    <button id="clickButton">Click Me</button>
+
+    <script>
+        const ourHeaderDom = document.getElementById("ourHeader");
+        const ourButtonDom = document.getElementById("clickButton");
+
+        ourButtonDom.addEventListener('click', () => {
+            console.log("Click is happening!!");
+            ourHeaderDom.style.color = "yellow";
+        })
+
+        function onClickHandler () {
+            console.log("Click is happeing");
+            ourHeaderDom.style.color = "red";
+        }
+        function onMouseOVerHandler () {
+            console.log("Click is happeing");
+            ourHeaderDom.style.color = "purple";
+            ourHeaderDom.innerText = "This section is hovering"
+        }
+    </script>
+    
+</body>
+</html>
